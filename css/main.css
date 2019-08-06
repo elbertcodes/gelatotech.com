@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+:root{
+    --action-color:#21bd21;
+}
+.btn{
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .5s ease;
+}
+.btn-action{
+    background: var(--action-color);
+    color:white;
+}
+.btn-action:hover{
+    background: #1aa01a;
+    color:white;
+}
+#hero{
+    background:rgb(220, 50, 50);
+    height: 60vh;
+    padding-top: 1.5rem;
+}
+#hero h1{
+    color:white;
+}
+#hero h2{
+    color:white;
+}
+#pricing{
+
+}
+#services{
+    background:rgb(244, 244, 244);
+    padding: 1.5rem;
+}
+#get-started{
+    background-image: url(https://thuthuatios.com/wp-content/uploads/2018/09/iphone-xs-camera-truedepth.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding:5rem;
+
+}
+#get-started h1{
+    color:white;
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+.form-container{
+    background-color:rgb(213, 213, 213);
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #get-started .title{
+        font-size: 2rem;
+    }
+    #get-started .subtitle{
+        font-size: 1rem;
+    }
+    #repair h1{
+        font-size: 1.8rem;
+    }
+    #repair .subtitle{
+        font-size:1rem;
+    }
+    #hero .title{
+        font-size: 2rem;
+    }
+    #hero .subtitle{
+        font-size: 1.5rem;
+    }
+    #works h1{
+        font-size: 2rem;
+    }
+  
+} 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
