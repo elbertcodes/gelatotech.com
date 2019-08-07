@@ -24,6 +24,7 @@
     background:rgb(220, 50, 50);
     height: 60vh;
     padding-top: 1.5rem;
+    margin-top:2rem;
 }
 #hero h1{
     color:white;
@@ -87,6 +88,14 @@
     }
   
 } 
+.navbar{
+    padding: 10px!important;
+}
+#nav-menu{
+   margin-left:21vw;
+   cursor: pointer
+}
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
