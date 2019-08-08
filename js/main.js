@@ -147,6 +147,8 @@ else{
     $("#select-color").show();
 }
 
+$("#phone").inputmask({"mask": "(999) 999-9999"});
+
   var selectIpadDevice = $("#select-ipad-device").val();
   var selectIpadIssue = $("#select-ipad-issue").val();
   //ipad if statements
