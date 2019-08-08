@@ -85,7 +85,7 @@
         
         <div id="navbarBasicExample" class="navbar-menu">
             <div id="nav-menu"  class="navbar-start has-text-center is-hidden-mobile">
-            <a href="#pricing" class="navbar-item">
+            <a href="#repair" class="navbar-item">
                 Pricing
             </a>
         
@@ -107,7 +107,7 @@
         
             <div class="navbar-end">
             <div class="navbar-item">
-                <a href="tel:4156177897" class="button is-info">
+                <a href="tel:4155177897" class="button is-info">
                     <strong>Call Now <i class="fas fa-phone"></i></strong>
                 </a>
                 
@@ -125,7 +125,7 @@
                 <h2 class="subtitle is-3">
                     Anytime, Anywhere you are
                 </h2>
-                <a href="https://gelatotech.com/book" target="_blank" class="btn btn-action">Repair Now<i  style="margin-left:5px;"class="fas fa-wrench"></i></a>
+                <a href="#repair" target="_blank" class="btn btn-action">Repair Now<i  style="margin-left:5px;"class="fas fa-wrench"></i></a>
                 </div>
                 <!-- reviews -->
           <div id="reviews" class="container">      
@@ -185,13 +185,16 @@
                         </div>
                       </section>
         <!-- pricing -->
-        <section class="section" id="pricing">
+      <section class="section" id="repair">
         <div class=" form-container container has-text-centered">
             <h1 class="title is-1">Pricing</h1>
             <h2 class="subtitle">Pick your device issue and model</h2>
             <figure>
             <img src="https://i.postimg.cc/gcq05yKT/iphonex.png" style="max-width:80px;" alt="">
         </figure>
+        <h3 class="title is-4" id="total-price-text">Our Price:</h3>
+
+      <form name="repair" method="POST" data-netlify="true" autocomplete="on">
         <div class="field">
             <div class="field">
             <div class="select is-info is-rounded">
@@ -224,9 +227,59 @@
                         </select>
                     </div>
                 </div>
+                <div  class="field">
+                    <span id="select-color"class="select is-rounded">
+                        <select name="color" onchange="myFunction()" required>
+                        <option disabled selected>Home Button Color</option>
+                        <option value="black">Black</option>
+                        <option value="white" >White</option>
+                        </select>
+                    </span> 
+                </div>
+                <div class="field">
+                    <div class="field is-horizontal">
+                            <div class="field-body">
+                              <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                  <input class="input" name="name" type="text" placeholder="Name" required>
+                                  <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="field">
+                                <p class="control is-expanded has-icons-left has-icons-right">
+                                  <input class="input " type="text" name="address" placeholder="Address" required>
+                                  <span class="icon is-small is-left">
+                                    <i class="fas fa-home"></i>
+                                  </span>
+                                </p>
+                              </div>
+
+                              <div class="field">
+                                    <p class="control is-expanded has-icons-left has-icons-right">
+                                      <input class="input " type="tel" placeholder="Cell #" required>
+                                      <span class="icon is-small is-left">
+                                        <i class="fas fa-phone"></i>
+                                      </span>
+                                    </p>
+                                  </div>
+                              <div class="field">
+                                  <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input " type="email" placeholder="Email" required>
+                                    <span class="icon is-small is-left">
+                                      <i class="fas fa-envelope"></i>
+                                    </span>
+                                  </p>
+                                </div>
+
+                      
+                            </div>
+                          </div>
+                    </div>
             </div>
-            <h3 class="title is-4" id="total-price-text">Our Price:</h3>
-            <a href="#repair" id="book-btn" class="btn btn-action">Book Now</a>
+            <button type='submit' class="btn btn-action">Submit</button>
+          </form>
         </div>
     </section>
         <!-- service includes -->
@@ -248,102 +301,7 @@
                 <a href="https://gelatotech.com/book" class="btn btn-action" target="_blank" >Repair Now <i class="fas fa-wrench"></i></a>
             </div>
         </div>
-        <!-- repair now -->
-        <div class="section" id="repair">
-            <div class="container form-container has-text-centered">
-                <h1 class="title is-1">Repair Now</h1>
-                <h1 class="subtitle is-4">Technician will call in the next hour</h1>
-                <form name="repair" method="POST" data-netlify="true" autocomplete="on">
-                        <figure>
-                                <img src="https://i.postimg.cc/gcq05yKT/iphonex.png" style="max-width:80px;" alt="">
-                            </figure>
-
-                            <div class="field">
-                                   <!-- choose issue -->
-                                <div class="field">
-                                    <span class="select is-danger is-rounded">
-                                            <select name="issue" id="select-issue" onchange="myFunction()" required>
-                                            <option disabled selected>Device Issue</option>
-                                            <option value="battery">Battery replacement</option>
-                                            <option value="screen">Screen replacement</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                    <!-- choose iphone -->
-                                    <div class="field">
-                                    <span class="select is-info is-rounded">
-                                            <select name="Choose Device" id="select-phone" onchange="myBookFunction()" required>
-                                                <option disabled="" selected>iPhone</option>
-                                                <option value="xsmax">iPhone Xs Max</option>
-                                                <option value="xs">iPhone Xs</option>
-                                                <option value="xr">iPhone XR</option>
-                                                <option value="x">iPhone X</option>
-                                                <option value="8plus">iPhone 8 Plus</option>
-                                                <option value="8">iPhone 8</option>
-                                                <option value="7plus">iPhone 7 Plus</option>
-                                                <option value="7">iPhone 7</option>
-                                                <option value="6splus">iPhone 6s Plus</option>
-                                                <option value="6s">iPhone 6s</option>
-                                                <option value="SE">iPhone SE</option>
-                                                <option value="6plus">iPhone 6 Plus</option>
-                                                <option value="6">iPhone 6</option>
-                                                <option value="5s">iPhone 5s</option>
-                                                <option value="5">iPhone 5</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                     
-                                               <!-- color -->
-                                        <div  class="field">
-                                        <span id="select-color"class="select is-rounded">
-                                            <select name="color" onchange="myFunction()" required>
-                                            <option disabled selected>Color</option>
-                                            <option value="black">Black</option>
-                                            <option value="white" >White</option>
-                                            </select>
-                                        </span> 
-                                    </div>        
-                                </div>
-
-
-                            <div class="field">
-                                    <div class="field is-horizontal">
-                                            <div class="field-body">
-                                              <div class="field">
-                                                <p class="control is-expanded has-icons-left">
-                                                  <input class="input" name="name" type="text" placeholder="Name" required>
-                                                  <span class="icon is-small is-left">
-                                                    <i class="fas fa-user"></i>
-                                                  </span>
-                                                </p>
-                                              </div>
-                                              <div class="field">
-                                                <p class="control is-expanded has-icons-left has-icons-right">
-                                                  <input class="input " type="text" name="address" placeholder="Address" required>
-                                                  <span class="icon is-small is-left">
-                                                    <i class="fas fa-home"></i>
-                                                  </span>
-                                                </p>
-                                              </div>
         
-                                              <div class="field">
-                                                    <p class="control is-expanded has-icons-left has-icons-right">
-                                                      <input class="input " type="tel" placeholder="Cell #" required>
-                                                      <span class="icon is-small is-left">
-                                                        <i class="fas fa-phone"></i>
-                                                      </span>
-                                                    </p>
-                                                  </div>
-        
-                                      
-                                            </div>
-                                          </div>
-                                    </div>
-                        
-                    <button type='submit' class="btn btn-action">Submit</button>
-                </form>
-            </div>
-        </div>
         <!-- footer -->
     <footer style="padding:25px;">
         <div class="container">
