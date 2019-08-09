@@ -97,6 +97,9 @@
    cursor: pointer
 }
 
+#nav-items a{
+    margin:0.5rem;
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
