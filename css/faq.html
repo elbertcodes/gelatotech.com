@@ -43,85 +43,45 @@
 </head>
 
 <body>
-  <nav class="navbar is-fixed-top">
+<!-- navbar -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-      <img src="https://i.imgur.com/ovz7ww7.png" alt="gelatotech">
-    </a>
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="book.html">
-        Repair
-      </a>
-        <!-- <a class="navbar-item" href="#">
-        Contact
-      </a> -->
-        <!-- <a class="navbar-item" href="#">
-        About
-      </a> -->
-        <a class="navbar-item" href="faqs.html">
-        FAQ's
-      </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="/documentation/overview/start/">
-          Store
+      <span>
+        <a class="navbar-item" href="https://bulma.io">
+        <img src="https://i.postimg.cc/gk1L6yd6/nav-logo-gtech.png" width="112" height="28">
         </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/documentation/overview/start/">
-            Cases
-          </a>
-            <a class="navbar-item" href="#documentation/modifiers/syntax/">
-            Chargers
-          </a>
-            <a class="navbar-item" href="#">
-            Battery Cases
-          </a>
-            <a class="navbar-item" href="#">
-            Accesories
-          </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item is-active" href="book.html">
-            Repair Device
-          </a>
-          </div>
-        </div>
-      </div>
+        <h1 style ="padding-left:10px; padding-bottom:10px;" class="subtitle is-6">On-Demand iPhone Repair</h1>
+      </span>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+       
+            
       <div class="navbar-end">
         <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="button is-danger" href="book.html">
-              <span class="icon">
-                <i class="fas fa-battery-full"></i>
-              </span>
-              <span>Repair Now</span>
+            <a href="#works" class="navbar-item">
+                How it Works
             </a>
-            </p>
+            <a href="#repair" class="navbar-item">
+                Repair <i class="fas fa-wrench"></i>
+            </a>
+            <a href="tel:4155177897" class="button is-info">
+                <strong>Call Now <i class="fas fa-phone"></i></strong>
+            </a>
 
-            <p class="control">
-              <a class="bd-tw-button button" target="_blank" href="tel:415-517-7897">
-              <span class="icon">
-                <i class="fas fa-phone"></i>
-              </span>
-              <span>
-                415-517-7897
-              </span>
-            </a>
-            </p>
-          </div>
         </div>
-      </div>
     </div>
-  </nav>
 
-  <div class="container">
+
+    </div>
+    </nav> 
+
+  <div class="section">
   <h1 class="section__headline">FAQs</h1>
   <h2 class="c-faqs__headline">Repairing my Device</h2>
   <ul class="c-faqs">
@@ -187,51 +147,65 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
+ <!-- footer -->
+ <footer style="padding:25px;">
+    <div class="container">
+    <div class="columns">
+    <div class="column footer-menu"><a href="/index"><img alt="gelatotech" src="https://i.imgur.com/ovz7ww7.png"> </a></div>
 
+    <div class="column footer-menu">
+    <h5>Service</h5>
+
+    <ul class="">
+        <li><a class="" href="/book" style="color:#A9A9A9;">Repair my Device</a></li>
+        <li><a class="" href="/faqs" style="color:#A9A9A9;">FAQ</a></li>
+    </ul>
+    </div>
+
+    <div class="column footer-menu">
+    <h5>Other</h5>
+
+    <ul class="">
+        <li><a href="/legal" style="color:#A9A9A9;">Terms and Conditions</a></li>
+    </ul>
+
+    <h5>Popular Devices</h5>
+
+    <ul>
+        <li style="color:#A9A9A9;"><a href="/book">iPhone X</a></li>
+        <li style="color:#A9A9A9;"><a href="/book">iPhone 7</a></li>
+        <li style="color:#A9A9A9;"><a href="/book">iPhone 6s</a></li>
+        <li style="color:#A9A9A9;"><a href="/book">iPhone 6</a></li>
+    </ul>
+    </div>
+
+    <div class="column footer-menu">
+    <h5 style="color:#212121;">Follow Us</h5>
+
+    <ul class="ulist">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <hr>
+    <p>Phone: <a href="tel:4155177897">415-517-7897</a><br>
+    Email:<a href="emailto:support@gelatotech.com"> support@gelatotech.com</a></p>
+    </div>
+    </div>
+    &nbsp;
+
+    <hr>
+    <p class="has-text-centered copyright has-text-grey">Copyright©2018 gelatotech.com. All rights reserved</p>
+    </div>
+</footer>
 </body>
-<footer style="padding-top:25px; padding-bottom:25px;">
-  <div class="container">
-      <div class="columns">
-          <div class="column has-text-centered">
-              <a href="index.html">
-                  <img src="https://i.imgur.com/ovz7ww7.png" alt="gelatotech">
-              </a>
-          </div>
 
-          <div class="column">
-              <div class="footer-item-header footerTitle"><b style="font-weight:bold;">Service</b></div>
-              <ul class="list-unstyled">
-                  <li><a href="book.html" class="footer-item">Repair my Device</a></li>
-                  <li><a href="#" class="footer-item">FAQ</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <div class="footer-item-header footerTitle"><b style="font-weight:bold;">legal</b></div>
-              <ul class="list-unstyled">
-                  <li>
-                      <a href="legal.html" class="footer-item">Terms and Conditions</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <div class="footer-item-header footerTitle"><b style="font-weight:bold;">Connect</b></div>
-              <ul class="list-unstyled">
-                  <li><a href="https://instagram.com/gelatotech" target="_blank" class="footer-item"><i class="fab fa-instagram" style="font-size:2em;"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UC7YXUJNMs9CprOSSVt4CKQg" target="_blank" class="footer-item"><i class="fab fa-youtube" style="font-size:2em;"></i></a></li>
-                  <li><a href="https://twitter.com/gelatotech" target="_blank" class="footer-item"><i class="fab fa-twitter" style="font-size:2em;"></i></a></li>
-              </ul>
-          </div>
-      </div><br><br>
-      <p class="has-text-centered copyright has-text-grey-light">
-          Copyright©2018 gelatotech.com. All rights reserved
-      </p>
-  </div>
   <style media="screen">
   @media (max-width: 768px) {
-      .list-unstyled {
-      text-align: center;
-    } .footerTitle{
-      text-align: center;
-    }
+    
 
     /*faq css*/
       }
@@ -257,11 +231,7 @@
                 box-sizing: inherit;
       }
 
-      .container {
-        max-width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+   
 
       .section__headline {
         font-family: "Varela Round", sans-serif;
@@ -413,5 +383,5 @@
     $(this).addClass('c-faq--active');
   });
   </script>
-</footer>
+
 </html>
