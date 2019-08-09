@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="https://s33.postimg.cc/lgt6sk0tb/gelatotech_white-text.png"/>
+    <meta property="og:image" content="https://s22.postimg.cc/swlpyjxkx/Desktop_bgimg.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/Gelatotech/Google Drive/Gelatotech Website/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js">
+
+    </script>
+
+    </script>
+    <title></title>
+    <script type="text/javascript">
+
+
+    jQuery(document).ready(function($) {
+              "use strict";
+              //  TESTIMONIALS CAROUSEL HOOK
+              $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  center: true,
+                  items: 3,
+                  margin: 0,
+                  autoplay: true,
+                  dots:true,
+                  autoplayTimeout: 4000,
+                  smartSpeed: 450,
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    768: {
+                      items: 2
+                    },
+                    1170: {
+                      items: 3
+                    }
+                  }
+              });
+            });
+            $(document).ready(function() {
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+});
+    function myFunction(){
+      var chooseIssue = $("#select-issue").val();
+      var chooseDevice = $("#select-device").val();
+
+       if (chooseIssue == "screen" && chooseDevice =="8plus"){
+        $("#total-price-text").text("Our Price:$149");
+      } if (chooseIssue == "battery" && chooseDevice =="8plus"){
+         $("#total-price-text").text("Our Price:$80");
+         $("#warranty-text").text("90 Day Warranty");
+       } if (chooseIssue == "screen" && chooseDevice =="8"){
+           $("#total-price-text").text("Our Price:$139");
+         } if (chooseIssue == "battery" && chooseDevice =="8"){
+             $("#total-price-text").text("Our Price:$70");
+             $("#warranty-text").text("90 Day Warranty");
+           } if (chooseIssue == "screen" && chooseDevice =="7plus"){
+              $("#total-price-text").text("Our Price:$109");
+            } if (chooseIssue == "battery" && chooseDevice =="7plus"){
+                  $("#total-price-text").text("Our Price:$70");
+                  $("#warranty-text").text("90 Day Warranty");
+                } if (chooseIssue == "screen" && chooseDevice =="7"){
+                  $("#total-price-text").text("Our Price:$109");
+                    } if (chooseIssue == "battery" && chooseDevice =="7"){
+                          $("#total-price-text").text("Our Price:$70");
+                          $("#warranty-text").text("90 Day Warranty");
+                        } if (chooseIssue == "screen" && chooseDevice =="6splus"){
+                              $("#total-price-text").text("Our Price:$99");
+                            } if (chooseIssue == "battery" && chooseDevice =="6splus"){
+                                   $("#total-price-text").text("Our Price:$65");
+                                   $("#warranty-text").text("90 Day Warranty");
+                                 } if (chooseIssue == "screen" && chooseDevice =="6s"){
+                                         $("#total-price-text").text("Our Price: $99");
+                                       } if (chooseIssue == "battery" && chooseDevice =="6s"){
+                                                $("#total-price-text").text("Our Price:$60");
+                                                $("#warranty-text").text("90 Day Warranty");
+                                              } if (chooseIssue == "screen" && chooseDevice =="SE"){
+                                                       $("#total-price-text").text("Our Price:$70");
+                                                     } if (chooseIssue == "screen" && chooseDevice =="SE"){
+                                                              $("#total-price-text").text("Our Price:$65");
+                                                            } if (chooseIssue == "screen" && chooseDevice =="6plus"){
+                                                               $("#total-price-text").text("Our Price:$90");
+                                                             } if (chooseIssue == "battery" && chooseDevice =="6plus"){
+                                                                 $("#total-price-text").text("Our Price:$60");
+                                                                 $("#warranty-text").text("90 Day Warranty");
+                                                               } if (chooseIssue == "screen" && chooseDevice =="6"){
+                                                                   $("#total-price-text").text("Our Price:$80");
+                                                                 } if (chooseIssue == "battery" && chooseDevice =="6"){
+                                                                     $("#total-price-text").text("Our Price:$50");
+                                                                     $("#warranty-text").text("90 Day Warranty");
+                                                                   } if (chooseIssue == "screen" && chooseDevice =="5s"){
+                                                                       $("#total-price-text").text("Our Price:$70");
+                                                                     } if (chooseIssue == "battery" && chooseDevice =="5s"){
+                                                                         $("#total-price-text").text("Our Price:$50");
+                                                                         $("#warranty-text").text("90 Day Warranty");
+                                                                       } if (chooseIssue == "screen" && chooseDevice =="5"){
+                                                                           $("#total-price-text").text("Our Price:$70");
+                                                                         } if (chooseIssue == "battery" && chooseDevice =="5"){
+                                                                             $("#total-price-text").text("Our Price:$45");
+                                                                             $("#warranty-text").text("90 Day Warranty");
+                                                                           } if (chooseIssue == "battery" && chooseDevice == "x"){
+                                                                             $("#total-price-text").text("Our Price:$89");
+                                                                             $("#warranty-text").text("90 Day Warranty");
+                                                                           } if (chooseIssue == "screen" && chooseDevice == "x"){
+                                                                             $("#total-price-text").text("Our Price:$259")
+                                                                           }
+
+
+                                                                            var selectIpadDevice = $("#select-ipad-device").val();
+                                                                            var selectIpadIssue = $("#select-ipad-issue").val();
+                                                                            //ipad if statements
+                                                                             if (selectIpadIssue == "screen" && selectIpadDevice =="mini4"){
+                                                                               $("#total-price-text-ipad").text("Our Price:$249");
+                                                                             } if (selectIpadIssue == "screen" && selectIpadDevice =="mini3"){
+                                                                                 $("#total-price-text-ipad").text("Our Price:$209");
+                                                                               } if (selectIpadIssue == "screen" && selectIpadDevice =="mini2"){
+                                                                                   $("#total-price-text-ipad").text("Our Price:$159");
+                                                                                 } if (selectIpadIssue == "screen" && selectIpadDevice =="mini1"){
+                                                                                     $("#total-price-text-ipad").text("Our Price:$159");
+                                                                                   } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad5"){
+                                                                                       $("#total-price-text-ipad").text("Our Price:$209");
+                                                                                     } if (selectIpadIssue == "screen" && selectIpadDevice =="air1"){
+                                                                                         $("#total-price-text-ipad").text("Our Price:$159");
+                                                                                       } if (selectIpadIssue == "screen" && selectIpadDevice =="air2"){
+                                                                                           $("#total-price-text-ipad").text("Our Price:$329");
+                                                                                         } if (selectIpadIssue == "screen" && selectIpadDevice =="pro"){
+                                                                                             $("#total-price-text-ipad").text("Our Price:$249");
+                                                                                           } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad4"){
+                                                                                               $("#total-price-text-ipad").text("Our Price:$89");
+                                                                                             } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad3"){
+                                                                                                 $("#total-price-text-ipad").text("Our Price:$89");
+                                                                                               } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad2"){
+                                                                                                   $("#total-price-text-ipad").text("Our Price:$89");
+                                                                                                  }
+
+    }
+
+    </script>
+    <style>
+        /* debug css start */
+/* *:not(path):not(g) {
+	color:                    hsla(210, 100%, 100%, 0.9) !important;
+	background:               hsla(210, 100%,  50%, 0.5) !important;
+	outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+
+	box-shadow: none !important;
+} */
+/* debug css end */
+*{
+font-family: 'Rubik', sans-serif;
+padding:0;
+margin:0;
+}
+html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+.column p{
+  font-weight: 600;
+}
+
+.bgimg{
+background-color: #FA305A;
+}
+.price-btn{
+background-color:gray;
+padding:5px;
+color:white;
+border-radius:5px;
+text-align:center;
+transition: .5s;
+}
+.price-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+}
+.grid-btns{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 20px;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+footer a{
+transition: .5s;
+color:gray;
+}
+.footer-contact{
+display:flex;
+justify-content: space-between;
+margin: 8px;
+}
+.get-started{
+    background-image: url(https://thuthuatios.com/wp-content/uploads/2018/09/iphone-xs-camera-truedepth.jpg);
+    background-size: cover;
+    padding: 80px;
+}
+#repair-device-button{
+    background-color: #1ED760;
+    border-color: white;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    transition:0.5s ease;
+}
+#repair-device-button:hover{
+  background-color: #109941;
+
+}
+.footer-social{
+ padding:10px;
+}
+.footer-social i{
+margin-right: 25px;
+background-color: #209cee;
+padding: 15px;
+color:white;
+border-radius: 100%;
+}
+.fa:hover{
+color:black;
+}
+.owl-drag{
+  margin-left:0px;
+
+}
+.is-warning{
+  background-color: #fa305a !important;
+}
+
+.navbar-burger:hover{
+  background-color: white !important;
+}
+.navbar-burger .burger{
+  color: white;
+}
+/* media queries */
+@media only screen and (max-width: 600px) {
+    .hero-body h1 {
+  font-size:45px !important;
+  }
+  .get-started h1{
+    font-size: 30px !important;
+  }
+  .hero-body h2{
+  font-size: 25px !important;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top" id="nav" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://gelatotech.com">
+          <img src="https://i.postimg.cc/gk1L6yd6/nav-logo-gtech.png" width="112" height="28">
+        </a>
+        <a href="tel:4155177897" class="navbar-item button is-info is-hidden-desktop" id="call-nav" style="margin-top:12px; margin-bottom: 12px; margin-left:auto;">Call Now <i style="margin-left:8px;"class="fas fa-phone-volume"></i></a>
+
+        <a role="button" class="navbar-burger burger" style="margin-left:0px;"aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+
+        </a>
+
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href='https://gelatotech.com/book'>
+            Repair
+          </a>
+
+          <a class="navbar-item" href="https://gelatotech.com/faqs">
+            Faq's
+          </a>
+
+
+            <a class='navbar-item' href="https://gelatotech.com/demand">
+              Our Customers
+            </a>
+        <a class='navbar-item' href="https://gelatotech.com/price">
+                Pricing
+        </a>
+        <a class="navbar-item" href='https://gelatotech.com/about'>
+          About Us
+        </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info" href="tel:4155177897">
+                <strong>Call Now</strong>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-small" style="background-color:#f24f4f;">
+      <div class="hero-body">
+        <div class="container" style="margin-top:80px;">
+          <h1 class="title is-1 center" style="color:white; font-size: 84px; ">We Strive for Quality Service</h1>
+          <div class="columns owl-carousel owl-theme" style="margin-top: 80px;">
+            <div class="column">
+              <div class="notification">
+                <img src="https://i.postimg.cc/yN46PQnb/jonathan.png" style="max-width:140px;"alt="">
+                <p>"Very quick and convenient. Came in Same-Day, they fixed my device in 15 minutes ” </p>
+              </div>
+            </div>
+      <div class="column">
+              <div class="notification">
+                <img src="https://i.postimg.cc/sDQnrw9m/daniel.png" style="max-width:140px;"alt="">
+                <p>"They were at my door just 30min later. Super friendly and he fixed my phone in 20min” </p>
+              </div>
+            </div>
+      <div class="column">
+              <div class="notification">
+                <img src="https://i.postimg.cc/T3rjQSfy/stephanie.png" style="max-width:140px;"alt="">
+                <p>"Great and convenient service! If you want you device fixed ASAP at a reasonable price”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <div class="container"></div>
+    <section class="section" style="margin-top:60px; padding: 2rem;">
+        <div class="container">
+            <h1 class="title is-1 center">About us</h1>
+
+      <div class="notification columns">
+          <figure class="image column">
+        <img src="https://i.postimg.cc/RVyx6yDg/IMG-0018.jpg"  alt="">
+    </figure>
+        <p class ="column subtitle is-4">Gelatotech is an On-Call iPhone Repair service located in San Francisco. With more than hundreds of repairs, we make sure to get you the best technicians & Top quality parts.</p>
+        </div>
+
+        <div class="notification center">
+        <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" max-width="500px;" alt="">
+        <h1 class="title is-1">Our philosophy </h1>
+        <p>In today’s fast-moving world it should be easy to get your iPhone fixed so you can get on with your life. That’s where we come in. Offering the fastest iPhone Screen Repair within 15 minutes.</p>
+      </div>
+      <div class="notification center">
+        <img src="https://i.postimg.cc/Y9Hp4Zj5/IMG-0065.jpg"  alt="">
+        <h1 class="title is-1">How does it work?</h1>
+        <p>Once your book your appointment, our booking system will notify us when and where to meet you to repair your device. You’ll receive a confirmation once we approve your request. That’s it.</p>
+      </div>
+
+      <div class="notification center">
+        <img src="https://s22.postimg.cc/swlpyjxkx/Desktop_bgimg.png" max-width="500px;" alt="">
+        <h1 class="title is-1">Our technicians </h1>
+        <p>We train our technicians in person to ensure we provide you with the best repair service. We only accept the top 10% so we can give you peace in mind that your iPhone repair will be done right.</p>
+      </div>
+    </div>
+    </section>
+<!-- get started -->
+    <div class="container get-started">
+    <h1 class="title is-1" style="color:white;">Ready to Get Started?</h1>
+
+    <h2 class="title is-5" style="color:white;">Repair your device starting at $69</h2>
+
+    <p class="title is-6" style="color:white;"><button id="repair-device-button"><a href="https://gelatotech.com/book" style='color:white;' >Repair my Device</a></button></p>
+    </div>
+    <footer style="padding:25px;">
+    <div class="container">
+    <div class="columns">
+    <div class="column footer-menu"><a href="/index"><img alt="gelatotech" src="https://i.imgur.com/ovz7ww7.png"> </a></div>
+
+    <div class="column footer-menu">
+    <h5>Service</h5>
+
+    <ul class="list-unstyled">
+    	<li><a class="footer-item" href="/book" style="color:#A9A9A9;">Repair my Device</a></li>
+    	<li><a class="footer-item" href="/faqs" style="color:#A9A9A9;">FAQ</a></li>
+    </ul>
+    </div>
+
+    <div class="column footer-menu">
+    <h5>Other</h5>
+
+    <ul class="list-unstyled">
+    	<li><a href="/legal" style="color:#A9A9A9;">Terms and Conditions</a></li>
+    </ul>
+
+    <h5>Popular Devices</h5>
+
+    <ul>
+    	<li style="color:#A9A9A9;"><a href="/book">iPhone X</a></li>
+    	<li style="color:#A9A9A9;"><a href="/book">iPhone 7</a></li>
+    	<li style="color:#A9A9A9;"><a href="/book">iPhone 6s</a></li>
+    	<li style="color:#A9A9A9;"><a href="/book">iPhone 6</a></li>
+    </ul>
+    </div>
+
+    <div class="column footer-menu">
+    <h5 style="color:#212121;">Follow Us</h5>
+
+    <ul class="ulist">
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    </ul>
+
+    <hr>
+    <p>Phone: <a href="tel:4155177897">415-517-7897</a><br>
+    Email:<a href="emailto:support@gelatotech.com"> support@gelatotech.com</a></p>
+    </div>
+    </div>
+    &nbsp;
+
+    <hr>
+    <p class="has-text-centered copyright has-text-grey">Copyright©2018 gelatotech.com. All rights reserved</p>
+    </div>
+    </footer>
+  </body>
+</html>
