@@ -175,7 +175,6 @@ $("#phone").inputmask({"mask": "(999) 999-9999"});
     $("#total-price-text-ipad").text("Our Price:$89")                                                                                             }
 
   }
- 
 $(function(){     
   var d = new Date(),        
       h = d.getHours(),
