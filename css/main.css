@@ -38,6 +38,10 @@
 #services{
     background:rgb(244, 244, 244);
     padding: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
 }
 #get-started{
     background-image: url(https://thuthuatios.com/wp-content/uploads/2018/09/iphone-xs-camera-truedepth.jpg);
@@ -50,13 +54,24 @@
 #get-started h1{
     color:white;
 }
+#why-us ul li{
+    padding: 0.5rem;
+}
+#why-us ul{
+    list-style-type: circle;
+}
+.why-container{
+    background:rgb(244, 244, 244);
+    padding: 3rem;
+    border-radius:5px;
 
+}
 .center{
     margin-left:auto;
     margin-right:auto;
 }
 .form-container{
-    background-color:rgb(213, 213, 213);
+    background:rgb(228, 228, 228);
     padding: 3rem;
     border-radius: 5px;
 }
