@@ -102,7 +102,11 @@
     #works h1{
         font-size: 2rem;
     }
-  
+  #why-us h2{
+      font-size: 1.5rem;
+  }#why-us h3{
+      font-size: 1rem;
+  }
 } 
 .navbar{
     padding: 10px!important;
