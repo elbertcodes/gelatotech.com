@@ -202,7 +202,7 @@
                       </div>
                       <div class="column">
                         <figure  class="image">
-                          <img style="border-radius: 5px;" src="https://i.postimg.cc/659WyYkZ/IMG-3421.jpg" alt="">
+                          <img style="border-radius: 5px; height: 30%;" src="https://i.postimg.cc/659WyYkZ/IMG-3421.jpg" alt="">
                         </figure>
                       </div>
                     </div>
@@ -222,8 +222,8 @@
         <div class="field">
             <div class="field">
             <div class="select is-info is-rounded">
-                    <select name="Choose Device" id="select-device" onchange="myFunction()">
-                        <option disabled="" selected="">iPhone 5</option>
+                    <select required name="Choose Device" id="select-device" onchange="myFunction()">
+                        <option disabled="" value="" selected="">Choose Device</option>
                         <option value="xsmax">iPhone Xs Max</option>
                         <option value="xs">iPhone Xs</option>
                         <option value="xr">iPhone XR</option>
@@ -244,24 +244,24 @@
                 </div>
                 <div class="field">                  
                     <div class="select is-danger is-rounded">
-                        <select name="issue" id="select-issue" onchange="myFunction()">
-                        <option disabled="">Device Issue</option>
+                      <select required name="issue" id="select-issue" onchange="myFunction()">
+                        <option value ="" selected disabled="">Device Issue</option>
+                        <option value="screen" >Screen replacement</option>
                         <option value="battery">Battery replacement</option>
-                        <option value="screen" selected="">Screen replacement</option>
                         </select>
                     </div>
                 </div>
                 <div  class="field">
                     <span id="select-color"class="select is-rounded">
                         <select name="color" onchange="myFunction()" required>
-                        <option disabled selected>Home Button Color</option>
+                        <option selected disabled value="">Home Button Color</option>
                         <option value="black">Black</option>
                         <option value="white" >White</option>
                         </select>
                     </span> 
                 </div>
                 <hr>
-                <h2 class="title is-5">Contact info <i class="fas fa-users"></i></h2>
+                <h2 class="title is-5 has-text-weight-light ">Contact info <i class="fas fa-users"></i></h2>
 
                 <div class="field">
                     <div class="field is-horizontal">
@@ -304,7 +304,7 @@
                     </div>
             </div>
             <hr>
-            <h2 class="title is-5">Time & Date <i class="fas fa-clock"></i></h2>
+            <h2 class="title is-5 has-text-weight-light	">Time & Date <i class="fas fa-clock"></i></h2>
 
             <div class="field is-horizontal">
               <div class="field-body">
@@ -320,7 +320,7 @@
           </div>
 
           </div>
-            <button type='submit' class="btn btn-action">Submit</button>
+            <button type='submit' class="btn btn-action">Schedule Repair</button>
           </form>
         </div>
     </section>
@@ -343,7 +343,7 @@
             <div class="container">
                 <h1 class="title is-1">Ready to get started?</h1>
                 <h1 class="subtitle is-4">Repair your device starting at $69</h1>
-                <a href="#repair" class="btn btn-action" target="_blank" >Repair  <i class="fas fa-wrench"></i></a>
+                <a href="#repair" class="btn btn-action" target="_blank" >Repair Now <i class="fas fa-wrench"></i></a>
             </div>
         </div>
         
