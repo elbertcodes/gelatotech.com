@@ -24,7 +24,7 @@
 }
 #hero{
     background:rgb(220, 50, 50);
-    padding:6rem 0;
+    padding:5rem 0;
 }
 #hero h1{
     color:white;
@@ -109,7 +109,9 @@
     #repair .subtitle{
         font-size:1rem;
     }
-   
+    #hero{
+        padding: 4rem 0;
+    }
     #hero .title{
         font-size: 2rem;
     }
