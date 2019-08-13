@@ -51,130 +51,140 @@ jQuery(document).ready(function($) {
 
   function myFunction(){
   var chooseIssue = $("#select-issue").val();
-  var chooseDevice = $("#select-device").val();
+  var chooseDeviceModel = $("#select-device-model").val();
+  var chooseDevice = $('#select-device').val();
+//choose iphone,ipad,pixel, samsung
+  if(chooseDevice === "iphone"){
+    $('#select-device').show();
+    console.log('h');
+  } if (chooseDevice === 'iPad'){
+    
+  }
+    
+    
 
-  if (chooseIssue == "screen" && chooseDevice =="8plus"){
+
+  if (chooseIssue == "screen" && chooseDeviceModel =="8plus"){
   $("#total-price-text").text("Our Price:$149");
-  } if (chooseIssue == "battery" && chooseDevice =="8plus"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="8plus"){
   $("#total-price-text").text("Our Price:$80");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="8"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="8"){
   $("#total-price-text").text("Our Price:$139");
-  } if (chooseIssue == "battery" && chooseDevice =="8"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="8"){
   $("#total-price-text").text("Our Price:$70");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="7plus"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="7plus"){
   $("#total-price-text").text("Our Price:$109");
-  } if (chooseIssue == "battery" && chooseDevice =="7plus"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="7plus"){
   $("#total-price-text").text("Our Price:$70");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="7"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="7"){
   $("#total-price-text").text("Our Price:$109");
-  } if (chooseIssue == "battery" && chooseDevice =="7"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="7"){
   $("#total-price-text").text("Our Price:$70");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="6splus"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="6splus"){
   $("#total-price-text").text("Our Price:$99");
-  } if (chooseIssue == "battery" && chooseDevice =="6splus"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="6splus"){
   $("#total-price-text").text("Our Price:$65");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="6s"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="6s"){
   $("#total-price-text").text("Our Price: $99");
-  } if (chooseIssue == "battery" && chooseDevice =="6s"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="6s"){
   $("#total-price-text").text("Our Price:$60");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="SE"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="SE"){
   $("#total-price-text").text("Our Price:$70");
-  } if (chooseIssue == "screen" && chooseDevice =="SE"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="SE"){
   $("#total-price-text").text("Our Price:$65");
-  } if (chooseIssue == "screen" && chooseDevice =="6plus"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="6plus"){
   $("#total-price-text").text("Our Price:$90");
-  } if (chooseIssue == "battery" && chooseDevice =="6plus"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="6plus"){
   $("#total-price-text").text("Our Price:$60");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="6"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="6"){
   $("#total-price-text").text("Our Price:$80");
-  } if (chooseIssue == "battery" && chooseDevice =="6"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="6"){
   $("#total-price-text").text("Our Price:$50");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="5s"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="5s"){
   $("#total-price-text").text("Our Price:$70");
-  } if (chooseIssue == "battery" && chooseDevice =="5s"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="5s"){
   $("#total-price-text").text("Our Price:$50");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice =="5"){
+  } if (chooseIssue == "screen" && chooseDeviceModel =="5"){
   $("#total-price-text").text("Our Price:$70");
-  } if (chooseIssue == "battery" && chooseDevice =="5"){
+  } if (chooseIssue == "battery" && chooseDeviceModel =="5"){
   $("#total-price-text").text("Our Price:$45");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "battery" && chooseDevice == "x"){
+  } if (chooseIssue == "battery" && chooseDeviceModel == "x"){
   $("#total-price-text").text("Our Price:$89");
   $("#warranty-text").text("90 Day Warranty");
-  } if (chooseIssue == "screen" && chooseDevice == "x"){
+  } if (chooseIssue == "screen" && chooseDeviceModel == "x"){
   $("#total-price-text").text("Our Price:$259")
-  } if (chooseIssue == "screen" && chooseDevice == "xs"){
+  } if (chooseIssue == "screen" && chooseDeviceModel == "xs"){
   $("#total-price-text").text("Our Price:$280")
-  } if (chooseIssue == "screen" && chooseDevice == "xsmax"){
+  } if (chooseIssue == "screen" && chooseDeviceModel == "xsmax"){
   $("#total-price-text").text("Our Price:$330")
-  } if (chooseIssue == "screen" && chooseDevice == "xr"){
+  } if (chooseIssue == "screen" && chooseDeviceModel == "xr"){
   $("#total-price-text").text("Our Price:$200")
-  } if (chooseIssue == "battery" && chooseDevice == "xsmax"){
+  } if (chooseIssue == "battery" && chooseDeviceModel == "xsmax"){
   $("#total-price-text").text("Our Price:$92")
-  } if (chooseIssue == "battery" && chooseDevice == "xs"){
+  } if (chooseIssue == "battery" && chooseDeviceModel == "xs"){
   $("#total-price-text").text("Our Price:$87")
-  } if (chooseIssue == "battery" && chooseDevice == "xr"){
+  } if (chooseIssue == "battery" && chooseDeviceModel == "xr"){
   $("#total-price-text").text("Our Price:$79")
-  } if (chooseDevice == "x"){
+  } if (chooseDeviceModel == "x"){
   $("#select-color").hide();
   } else{
   $("#select-color").show();
   }
   
   // hide color on iphone x models
-  if (chooseDevice == "x"){
+  if (chooseDeviceModel == "x"){
     $("#select-color").hide();
 } 
-else if (chooseDevice == "xs"){
+else if (chooseDeviceModel == "xs"){
     $("#select-color").hide();
 }
-else if (chooseDevice == "xsmax"){
+else if (chooseDeviceModel == "xsmax"){
     $("#select-color").hide();
 } 
-else if (chooseDevice == "xr"){
+else if (chooseDeviceModel == "xr"){
     $("#select-color").hide();
 }
 else{
     $("#select-color").show();
 }
 
-$("#phone").inputmask({"mask": "(999) 999-9999"});
 
-  var selectIpadDevice = $("#select-ipad-device").val();
-  var selectIpadIssue = $("#select-ipad-issue").val();
+
   //ipad if statements
-  if (selectIpadIssue == "screen" && selectIpadDevice =="mini4"){
-  $("#total-price-text-ipad").text("Our Price:$249");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="mini3"){
-  $("#total-price-text-ipad").text("Our Price:$209");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="mini2"){
-  $("#total-price-text-ipad").text("Our Price:$159");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="mini1"){
-  $("#total-price-text-ipad").text("Our Price:$159");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad5"){
-  $("#total-price-text-ipad").text("Our Price:$209");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="air1"){
-  $("#total-price-text-ipad").text("Our Price:$159");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="air2"){
-  $("#total-price-text-ipad").text("Our Price:$329");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="pro"){
-  $("#total-price-text-ipad").text("Our Price:$249");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad4"){
-  $("#total-price-text-ipad").text("Our Price:$89");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad3"){                                                                                         $("#total-price-text-ipad").text("Our Price:$89");
-  } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad2"){
-    $("#total-price-text-ipad").text("Our Price:$89")                                                                                             }
-
+  // if (selectIpadIssue == "screen" && selectIpadDevice =="mini4"){
+  // $("#total-price-text-ipad").text("Our Price:$249");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="mini3"){
+  // $("#total-price-text-ipad").text("Our Price:$209");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="mini2"){
+  // $("#total-price-text-ipad").text("Our Price:$159");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="mini1"){
+  // $("#total-price-text-ipad").text("Our Price:$159");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad5"){
+  // $("#total-price-text-ipad").text("Our Price:$209");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="air1"){
+  // $("#total-price-text-ipad").text("Our Price:$159");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="air2"){
+  // $("#total-price-text-ipad").text("Our Price:$329");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="pro"){
+  // $("#total-price-text-ipad").text("Our Price:$249");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad4"){
+  // $("#total-price-text-ipad").text("Our Price:$89");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad3"){                                                                                         $("#total-price-text-ipad").text("Our Price:$89");
+  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad2"){
+  //   $("#total-price-text-ipad").text("Our Price:$89")                                                                                             }
   }
+  
+
 $(function(){     
   var d = new Date(),        
       h = d.getHours(),

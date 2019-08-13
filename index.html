@@ -247,10 +247,11 @@
 
       <form name="repair" method="POST" data-netlify="true" autocomplete="on">
         <div class="field">
+            
             <div class="field">
             <div class="select is-info is-rounded">
-                    <select required name="Choose Device" id="select-device" onchange="myFunction()">
-                        <option disabled="" value="" selected="">Choose Device</option>
+                    <select required name="Choose Device Model" id="select-device-model" onchange="myFunction()">
+                        <option disabled="" value="" selected="">Device Model</option>
                         <option value="xsmax">iPhone Xs Max</option>
                         <option value="xs">iPhone Xs</option>
                         <option value="xr">iPhone XR</option>
@@ -279,14 +280,16 @@
                     </div>
                 </div>
                 <div  class="field">
-                    <span id="select-color"class="select is-rounded">
-                        <select name="color" onchange="myFunction()" required>
+                    <div class="select is-rounded">
+                        <select name="color" id="select-color" onchange="myFunction()" required>
                         <option selected disabled value="">Home Button Color</option>
                         <option value="black">Black</option>
                         <option value="white" >White</option>
                         </select>
-                    </span> 
+                    </div> 
                 </div>
+              </div>
+
                 <hr>
                 <h2 class="title is-5 has-text-weight-light ">Contact info <i class="fas fa-users"></i></h2>
 
@@ -346,7 +349,6 @@
             </div>
           </div>
 
-          </div>
             <button type='submit' class="btn btn-action">Schedule Repair</button>
           </form>
         </div>
