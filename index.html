@@ -41,7 +41,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-121085071-1');
   </script>
   <meta property="og:image" content="https://s22.postimg.cc/swlpyjxkx/Desktop_bgimg.png">
@@ -66,14 +65,11 @@
 
   <script src="">
     $(document).ready(function () {
-
       // Check for click events on the navbar burger icon
       $(".navbar-burger").click(function () {
-
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
-
       });
     });
   </script>
@@ -146,30 +142,18 @@
             <div class="notification">
               <img src="https://i.postimg.cc/yN46PQnb/jonathan.png" style="max-width:140px;" alt="">
               <p>"Very quick and convenient. Came in Same-Day, they fixed my device in 15 minutes ” </p>
-              <br>
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20"
-                target='_blank' class="button is-danger is-rounded">View on Yelp <i style='margin-left: 5px;'
-                  class="fab fa-yelp"></i></a>
             </div>
           </div>
           <div class="column">
             <div class="notification">
               <img src="https://i.postimg.cc/sDQnrw9m/daniel.png" style="max-width:140px;" alt="">
               <p>"They were at my door just 30min later. Super friendly and he fixed my phone in 20min” </p>
-              <br>
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20"
-                target='_blank' class="button is-danger is-rounded">View on Yelp <i style='margin-left: 5px;'
-                  class="fab fa-yelp"></i></a>
             </div>
           </div>
           <div class="column">
             <div class="notification">
               <img src="https://i.postimg.cc/T3rjQSfy/stephanie.png" style="max-width:140px;" alt="">
               <p>"Great and convenient service! If you want you device fixed ASAP at a reasonable price”</p>
-              <br>
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20"
-                target='_blank' class="button is-danger is-rounded">View on Yelp <i style='margin-left: 5px;'
-                  class="fab fa-yelp"></i></a>
             </div>
           </div>
         </div>
@@ -248,14 +232,7 @@
   <section class="section" id="why-us">
     <div class="container">
       <h1 class="title is-1 has-text-centered">Why us?</h1>
-      <div class="columns is-vcentered">
-        <div class="column">
-          <figure class="image has-text-centered">
-            <img style="border-radius:5px; margin:0 auto; width: 70%;" src="https://i.postimg.cc/659WyYkZ/IMG-3421.jpg"
-              alt="">
-          </figure>
-        </div>
-
+      <div class="columns">
         <div class="column">
           <div class="why-container">
             <ul>
@@ -276,7 +253,11 @@
             </ul>
           </div>
         </div>
-
+        <div class="column">
+          <figure class="image">
+            <img style="border-radius: 5px; height: 30%;" src="https://i.postimg.cc/659WyYkZ/IMG-3421.jpg" alt="">
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -290,7 +271,7 @@
       </figure>
       <h3 class="title is-4" id="total-price-text">Our Price:</h3>
 
-      <form netlify name="repair" method="POST" autocomplete="on">
+      <form name="repair" method="POST" data-netlify="true" autocomplete="on">
         <div class="field">
 
           <div class="field">
