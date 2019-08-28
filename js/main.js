@@ -139,24 +139,6 @@ function myFunction() {
 
 
 
-  // hide color on iphone x models
-  if (chooseDeviceModel == "x") {
-    $("#select-color").hide();
-  }
-  else if (chooseDeviceModel == "xs") {
-    $("#select-color").hide();
-  }
-  else if (chooseDeviceModel == "xsmax") {
-    $("#select-color").hide();
-  }
-  else if (chooseDeviceModel == "xr") {
-    $("#select-color").hide();
-  }
-  else {
-    $("#select-color").show();
-  }
-
-
 
   //ipad if statements
   // if (selectIpadIssue == "screen" && selectIpadDevice =="mini4"){
