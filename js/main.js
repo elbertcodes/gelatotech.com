@@ -92,7 +92,7 @@ function myFunction() {
     $("#total-price-text").text("65");
     $("#warranty-text").text("90 Day Warranty");
   } if (chooseIssue == "screen" && chooseDeviceModel == "6s") {
-    $("#total-price-text").text("Our Price: $99");
+    $("#total-price-text").text("$99");
   } if (chooseIssue == "battery" && chooseDeviceModel == "6s") {
     $("#total-price-text").text("60");
     $("#warranty-text").text("90 Day Warranty");
