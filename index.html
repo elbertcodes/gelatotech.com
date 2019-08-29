@@ -279,7 +279,8 @@
       <figure>
         <img src="https://i.postimg.cc/gcq05yKT/iphonex.png" style="max-width:80px;" alt="">
       </figure>
-      <h3 class="title is-4" id="total-price-text">Our Price:</h3>
+      <h3 id='our-price-text' class="title is-4">Our Price:$ <p id="total-price-text"></p>
+      </h3>
 
       <form name="repair" method="POST" data-netlify="true" autocomplete="on">
         <div class="field">
@@ -309,8 +310,7 @@
           <div class="field">
             <div class="select is-danger is-rounded">
               <select required name="issue" id="select-issue" onchange="myFunction()">
-                <option value="" selected disabled="">Device Issue</option>
-                <option value="screen">Screen replacement</option>
+                <option value="screen" selected>Screen replacement</option>
                 <option value="battery">Battery replacement</option>
               </select>
             </div>
