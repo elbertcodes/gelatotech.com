@@ -25,7 +25,7 @@
 }
 #hero{
     background:url('https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    position: center;
+    
     padding:5rem 0;
 }
 #hero h1{
