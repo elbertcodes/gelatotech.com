@@ -24,7 +24,8 @@
     color:white;
 }
 #hero{
-    background:rgb(220, 50, 50);
+    background:url('https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    position: center;
     padding:5rem 0;
 }
 #hero h1{
@@ -99,6 +100,9 @@
 }
 #companies{
     font-size: 3rem;
+}
+#nav{
+    /* background:none!important; */
 }
 /* media queries */
 /* [iphone6](phones, 600px and down) */

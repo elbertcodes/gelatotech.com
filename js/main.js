@@ -139,8 +139,18 @@ function myFunction() {
     $("#total-price-text").text("79")
   }
 
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll > 300) {
+        $("#nav").css();
+      }
 
-
+      else {
+        $("#nav").css("background", "#333");
+      }
+    })
+  })
 
   //ipad if statements
   // if (selectIpadIssue == "screen" && selectIpadDevice =="mini4"){
